@@ -6,11 +6,33 @@ body {
 }
 
 header {
-    background-color: #333;
+    /* Set the position property to relative for proper stacking of the image and text */
+    position: relative;
     color: #fff;
     text-align: center;
     padding: 1em;
+    /* Set the height of the header */
+    height: 200px; /* Adjust the height as needed */
+    overflow: hidden; /* Hide overflow content */
 }
+
+.header-background {
+    /* Set the background image and size */
+    background-image: url('header-img.jpg'); /* Replace 'your-image.jpg' with your image file path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Set the height of the background image to cover the header */
+    height: 100%;
+    /* Apply a semi-transparent overlay for better text readability */
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
 
 nav {
     background-color: #333;
